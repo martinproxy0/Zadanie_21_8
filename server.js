@@ -5,7 +5,7 @@ const app = express();
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://martin99:qwerty123@ds151908.mlab.com:51908/firstdb', {
-    
+
     useMongoClient: true
 });
 
@@ -153,9 +153,9 @@ Promise.all([kenny.save(), mark.save(), benny.save()])
     .then(findSpecificRecord)
     .then(updadeUserPassword)
     .then(updateUsername)
-    .then(findMarkAndDelete)
-    .then(findKennyAndDelete)
-    .then(findBennyAndRemove)
+    //.then(findMarkAndDelete)
+    //.then(findKennyAndDelete)
+    //.then(findBennyAndRemove)
     .catch(console.log.bind(console))
 
 app.set('port', (process.env.PORT || 5000));
