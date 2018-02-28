@@ -3,9 +3,10 @@ const Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/nodedb', {
+mongoose.connect('mongodb://martin99:qwerty123@ds151908.mlab.com:51908/firstdb', {
     useMongoClient: true
 });
+
 
 
 //new user Schema
